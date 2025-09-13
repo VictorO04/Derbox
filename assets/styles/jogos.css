@@ -1,91 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:wght@400;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        body {
+            background-color: rgb(52, 0, 71);
+            font-family: "Poppins", sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(52, 0, 71);
-    min-height: 100vh;
-    font-family: "Jersey 10", sans-serif;
-    padding: 20px;
-}
+        .logo_derbox {
+            width: 80px;
+            height: 80px;
+        }
 
-.logo {
-    width: 80px;
-    height: 80px;
-}
+        .topo {
+            width: 100%;
+            background-color: rgb(52, 0, 71);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-.header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgb(52, 0, 71);
-    padding: 15px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        .busca {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin: 0 20px;
+        }
 
-.pesquisa {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin: 0 20px;
-}
+        .busca input {
+            width: 50%;
+            max-width: 400px;
+            padding: 8px 12px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(88, 0, 120);
+            color: white;
+            font-size: 16px;
+        }
 
-.pesquisa input {
-    width: 50%;
-    max-width: 400px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 16px;
-}
+        .busca input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.5);
+        }
 
-centro {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
+        .botoes_topo a {
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            padding: 8px 15px;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
 
-.container {
-    margin: 30px 0;
-    padding: 15px;
-    background: rgb(63, 0, 82);
-    border-radius: 15px;
-}
+        .botoes_topo a.criar_conta {
+            background: linear-gradient(90deg, #8a2be2, #ff1493);
+        }
 
-.container h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: white;
-}
+        .botoes_topo a:hover {
+            opacity: 0.8;
+        }
 
-.recomendados {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
-    padding: 10px;
-}
+        .titulo_gradiente {
+            font-family: "Jersey 10", sans-serif;
+            background: linear-gradient(90deg, #8a2be2, #ff1493);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2rem;
+        }
 
-.jogo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-}
+        .secao {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.jogo a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
+        .secao h2 {
+            font-family: "Jersey 10", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .cartoes_jogos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+        }
+
+        .cartao_jogo {
+            background-color: rgb(88, 0, 120);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .cartao_jogo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .cartao_jogo img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .cartao_jogo .nome_jogo {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .cartao_jogo .nota_jogo {
+            color: yellow;
+            margin-bottom: 5px;
+        }
+
+        .rodape {
+            background-color: rgb(52, 0, 71);
+            padding: 20px 30px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgb(200,200,200);
+        }
