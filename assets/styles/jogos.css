@@ -15,6 +15,11 @@ body {
     padding: 20px;
 }
 
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
 .header {
     width: 100%;
     display: flex;
@@ -63,7 +68,8 @@ centro {
 
 .recomendados {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
     padding: 10px;
 }
 
@@ -76,17 +82,10 @@ centro {
     overflow: hidden;
     width: 100px;
     height: 100px;
-    margin: 10px;
-    padding: -20px;
 }
 
 .jogo a {
     text-decoration: none;
     color: white;
     text-align: center;
-}
-
-.jogo a:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
