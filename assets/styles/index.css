@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #230D4B;
+}
+
+header {
+    display: flex;
+    padding: 25px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.5s;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+#signin {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#signin:hover {
+    color: #9583b8;
+    border-color: #9583b8;
+}
+
+#create:hover {
+    color: #9583b8;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 350px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#searchInput {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    color: white;
+}
+
+.search label {
+    height: 20px;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
