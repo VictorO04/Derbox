@@ -1,132 +1,86 @@
        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:wght@400;600;700&display=swap');
 
         body {
-            background-color: rgb(52, 0, 71);
-            font-family: "Poppins", sans-serif;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1b0036;
+      color: white;
+    }
 
-        .logo_derbox {
-            width: 80px;
-            height: 80px;
-        }
+    /* Cabeçalho */
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #0f0020;
+    }
 
-        .topo {
-            width: 100%;
-            background-color: rgb(52, 0, 71);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
 
-        .busca {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            margin: 0 20px;
-        }
+    .barra_pesquisa {
+      flex: 1;
+      margin: 0 20px;
+    }
 
-        .busca input {
-            width: 50%;
-            max-width: 400px;
-            padding: 8px 12px;
-            border-radius: 50px;
-            border: none;
-            background-color: rgb(88, 0, 120);
-            color: white;
-            font-size: 16px;
-        }
+    .barra_pesquisa input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+    }
 
-        .busca input:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.5);
-        }
+    .botoes {
+      display: flex;
+      gap: 10px;
+    }
 
-        .botoes_topo a {
-            text-decoration: none;
-            color: white;
-            margin-left: 15px;
-            padding: 8px 15px;
-            border-radius: 50px;
-            transition: 0.3s;
-        }
+    .botoes button {
+      padding: 6px 15px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-        .botoes_topo a.criar_conta {
-            background: linear-gradient(90deg, #8a2be2, #ff1493);
-        }
+    .botao_entrar {
+      background-color: #fff;
+      color: #1b0036;
+    }
 
-        .botoes_topo a:hover {
-            opacity: 0.8;
-        }
+    .botao_criar {
+      background-color: #3a005e;
+      color: white;
+    }
 
-        .titulo_gradiente {
-            font-family: "Jersey 10", sans-serif;
-            background: linear-gradient(90deg, #8a2be2, #ff1493);
-            -webkit-background-clip: text;
-            color: transparent;
-            font-size: 2rem;
-        }
+    /* Seções */
+    .secao {
+      margin: 25px;
+      background-color: #26004d;
+      border-radius: 10px;
+      padding: 15px;
+    }
 
-        .secao {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .titulo_secao {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
 
-        .secao h2 {
-            font-family: "Jersey 10", sans-serif;
-            font-size: 2rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
+    .lista_jogos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+    }
 
-        .cartoes_jogos {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 15px;
-        }
-
-        .cartao_jogo {
-            background-color: rgb(88, 0, 120);
-            border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .cartao_jogo:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-        .cartao_jogo img {
-            width: 100%;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .cartao_jogo .nome_jogo {
-            font-weight: bold;
-            margin: 5px 0;
-        }
-
-        .cartao_jogo .nota_jogo {
-            color: yellow;
-            margin-bottom: 5px;
-        }
-
-        .rodape {
-            background-color: rgb(52, 0, 71);
-            padding: 20px 30px;
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: rgb(200,200,200);
-        }
+    .jogo {
+      background-color: #aaa;
+      border-radius: 8px;
+      width: 100%;
+      padding-top: 100%; /* deixa quadrado */
+      position: relative;
+    }
