@@ -1,73 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 body {
-    background-color: #230D4B;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1b0036;
+  color: white;
 }
 
 header {
-    display: flex;
-    padding: 25px 200px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0020;
+}
+
+.logo img {
+  height: 95px;
 }
 
 .menu {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 25px;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    transition: color 0.5s;
-    padding: 5px 10px;
-    transition: color 0.2s;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 5px 12px;
 }
 
 #signin {
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 10px;
+  border: 2px solid white;
+  border-radius: 8px;
 }
 
 #signin:hover {
-    color: #9583b8;
-    border-color: #9583b8;
+  color: #9583b8;
+  border-color: #9583b8;
 }
 
 #create:hover {
-    color: #9583b8;
+  color: #9583b8;
 }
 
+/* Pesquisa */
 .search {
-    display: flex;
-    align-items: center;
-    border: 1px solid white;
-    background-color: transparent;
-    width: 350px;
-    border-radius: 10px;
-    padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  width: 320px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-left: 110px;
 }
 
 #searchInput {
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    outline: none;
-    color: white;
-}
-
-.search label {
-    height: 20px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  color: white;
 }
 
 .search-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
