@@ -83,13 +83,15 @@ header {
   margin-bottom: 15px;
 }
 
-.lista_jogos {
+.lista_series {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 15px;
+  height: 180px;
+  width: 180px;
 }
 
-.jogo {
+.series {
   background-color: #aaa;
   border-radius: 8px;
   height: 180px;
@@ -97,7 +99,7 @@ header {
   transition: all 0.6s ease;
 }
 
-.jogo:hover {
+.series:hover {
   transform: scale(1.08) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
