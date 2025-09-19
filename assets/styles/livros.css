@@ -83,23 +83,21 @@ header {
   margin-bottom: 15px;
 }
 
-.lista_series {
+.lista_livros {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
-  height: 180px;
-  width: 180px;
 }
 
-.series {
+.livros {
   background-color: #aaa;
   border-radius: 8px;
-  height: 180px;
+  height: 280px;
   position: relative;
   transition: all 0.6s ease;
 }
 
-.series:hover {
+.livros:hover {
   transform: scale(1.08) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
