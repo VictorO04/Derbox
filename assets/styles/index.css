@@ -109,7 +109,6 @@ header {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    gap: 20px;
 }
 
 .banner-text h1 {
@@ -121,7 +120,6 @@ header {
     margin: 15px 0;
     font-size: 1.2rem;
     color: #ddd;
-    gap: 30px;
 }
 
 .btn {
@@ -132,7 +130,6 @@ header {
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.3s;
-    gap: 30px;
 }
 
 .btn:hover {
@@ -141,7 +138,8 @@ header {
 
 /* Categorias */
 .categoria {
-    margin: 40px;
+    margin: 40px 0; /* alinhado só em cima e embaixo */
+    padding: 0 40px; /* alinhamento lateral igual para todos */
 }
 
 .categoria h2 {
@@ -176,4 +174,16 @@ footer {
     background: #1a1a1a;
     border-top: 2px solid #062c8a;
     margin-top: 50px;
+}
+
+.cartoes {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.cartoes:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0px 4px 15px rgba(7, 54, 120, 0.6);
 }
