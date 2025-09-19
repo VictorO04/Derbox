@@ -1,17 +1,17 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #250049;
-  color: white;
+    background-color: #0f0f0f;
+    color: #fff;
 }
 
+/* Header */
 header {
   display: flex;
   padding: 20px 50px;
@@ -76,28 +76,104 @@ header {
   justify-content: center;
 }
 
-/*corpo*/
-.corpo {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column;
-  height: 500px; 
-  background-color: #59395981;
+/* Menu */
+.menu a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-.botão {
-  width: 170px;
-  padding: 12px 24px;
-  background-color: red;
-  text-align: center;
-  margin-top: 300px;
-  text-decoration: none;
-  color:white;
+
+.menu a:hover {
+    color: #002488;
 }
-.categoria{
-  color: red;
-  background-color: red;
-  width: 170px;
-  text-decoration: none;
-  justify-content: space-around;
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    gap: 20px;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.banner-text p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #ddd;
+    gap: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #103ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+    gap: 30px;
+}
+
+.btn:hover {
+    background: #0c257f;
+}
+
+/* Categorias */
+.categoria {
+    margin: 40px;
+}
+
+.categoria h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #2200ff;
+    padding-left: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.grid img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0px 4px 15px rgba(7, 54, 120, 0.6);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    border-top: 2px solid #062c8a;
+    margin-top: 50px;
 }

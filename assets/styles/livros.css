@@ -98,7 +98,7 @@ header {
 }
 
 .livros:hover {
-  transform: scale(1.08) rotate(2deg);
+  transform: scale(1.08) rotate(2deg) scale(105%);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
 }

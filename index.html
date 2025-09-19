@@ -9,27 +9,64 @@
 <body>
     <header>
         <div class="logo">
-                <img src="./assets/img/Derbox.png" alt="Derbox Logo">
+            <img src="./assets/img/Derbox.png" alt="Derbox Logo">
         </div>
 
         <div class="search-container">
             <div class="search">
                 <label for="searchInput"></label>
-                <input type="text" id="searchInput" placeholder="Pesquisa...">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
             </div>
         </div>
+
         <div class="menu">
             <a id="signin" href="./pages/login.html">Sign In</a>
             <a id="create" href="./pages/criarConta.html">Criar Conta</a>
         </div>
     </header>
-    <div class="corpo">
-        <a href="./pages/criarConta.html" class="botão">Vamos começar!</a>
-    </div>
-    <div class ="categoria">
-        <a href="./pages/jogos.html">PROVISORIO jogos</a>
-        <a href="./pages/series.html">PROVISORIO series</a>
-        <a href="./pages/livros.html">PROVISORIO livros</a>
-    </div>
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <img src="./assets/img/Crew2_banner.png" alt="Banner Principal">
+        <div class="banner-text">
+            <h1>Bem-vindo ao Derbox</h1>
+            <p>Avaliação de filmes, Séries, Jogos e muito mais num só lugar!</p>
+            <a href="./pages/criarConta.html" class="btn">Começar agora</a>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <main>
+        <section class="categoria">
+            <h2>Jogos</h2>
+            <div class="grid">
+                <a href="./pages/jogos/Crew2.html"><img src="./assets/img/Crew2.png" alt="The Crew 2"></a>
+                <a href="./pages/jogos/MK11.html"><img src="./assets/img/MK11.png" alt="Mortal Kombat 11"></a>
+                <a href="./pages/jogos/FC25.html"><img src="./assets/img/FC25.png" alt="FC 25"></a>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Séries</h2>
+            <div class="grid">
+                <a href="./pages/series.html"><img src="./assets/img/stranger_capa.png" alt="Stranger Things"></a>
+                <a href="./pages/series.html"><img src="./assets/img/friends_capa.png" alt="Friends"></a>
+                <a href="./pages/series.html"><img src="./assets/img/thrones_capa.png" alt="Game of Thrones"></a>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Livros</h2>
+            <div class="grid">
+                <a href="./pages/livros/mascara.html"><img src="./assets/img/mascara_capa.png" alt="A Máscara"></a>
+                <a href="./pages/livros.html"><img src="./assets/img/verao_capa.png" alt="Um verão inesquecível"></a>
+                <a href="./pages/livros.html"><img src="./assets/img/ryck_capa.png" alt="Ryck e a Jornada"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Derbox - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
