@@ -94,3 +94,9 @@ header {
   text-decoration: none;
   color:white;
 }
+#categoria{
+  color: red;
+  background-color: red;
+  width: 170px;
+  text-decoration: none;
+}
