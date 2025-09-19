@@ -138,8 +138,8 @@ header {
 
 /* Categorias */
 .categoria {
-    margin: 40px 0; /* alinhado só em cima e embaixo */
-    padding: 0 40px; /* alinhamento lateral igual para todos */
+    margin: 40px 0;
+    padding: 0 40px;
 }
 
 .categoria h2 {

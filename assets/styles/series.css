@@ -79,8 +79,12 @@ header {
 }
 
 .titulo_secao {
-  font-size: 18px;
-  margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #103ab7, #9583b8) 1;
 }
 
 .lista_series {
