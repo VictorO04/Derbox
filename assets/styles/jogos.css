@@ -141,6 +141,26 @@ header {
   gap: 15px;
 }
 
+.lista_maior_jogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.destaque {
+  background-color: #aaa;
+  border-radius: 8px;
+  height: 180px;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.destaque:hover {
+  transform: scale(1.4) rotate(3deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #0680de;
+}
+
 .jogo {
   background-color: #aaa;
   border-radius: 8px;
@@ -150,7 +170,7 @@ header {
 }
 
 .jogo:hover {
-  transform: scale(1.4) rotate(3deg);
+  transform: scale(1.08) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
 }
