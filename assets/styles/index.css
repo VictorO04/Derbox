@@ -187,3 +187,108 @@ footer {
   transform: scale(1.05) rotate(2deg);
   box-shadow: 0px 4px 15px rgba(7, 54, 120, 0.6);
 }
+
+/* RESPONSIVIDADE PARA TABLETS E CELULARES */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .search {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 250px;
+        padding: 15px;
+    }
+
+    .banner-text {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.6rem;
+    }
+
+    /* Categorias */
+    .categoria {
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    .categoria h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+    }
+
+    .grid img {
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .cartoes {
+        border-radius: 8px;
+    }
+}
+
+/* PARA TELAS MUITO PEQUENAS (TIPO CELULAR 320px) */
+@media screen and (max-width: 400px) {
+    .banner {
+        height: 180px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-text p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .categoria h2 {
+        font-size: 1.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

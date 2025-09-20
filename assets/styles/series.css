@@ -106,3 +106,54 @@ header {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
 }
+
+/* Responsividade para celulares */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .search {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .secao {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .titulo_secao {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .lista_series {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .series {
+    height: 200px;
+  }
+}

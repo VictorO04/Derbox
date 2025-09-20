@@ -154,3 +154,108 @@ header {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
 }
+
+/* Responsividade para celulares */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .search {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .banner {
+    height: 250px;
+    margin-right: 0;
+  }
+
+  .banner-text {
+    top: 40%;
+    left: 5%;
+    margin-right: 0;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+    margin-right: 0;
+  }
+
+  .banner-text h2 {
+    font-size: 1rem;
+  }
+
+  .botao {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .secao {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .titulo_secao {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .lista_jogos {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .jogo {
+    height: 140px;
+  }
+}
+
+/* Para telas muito pequenas, tipo 320px */
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 180px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .banner-text h2 {
+    font-size: 0.9rem;
+  }
+
+  .botao {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .lista_jogos {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+  }
+
+  .jogo {
+    height: 120px;
+  }
+}

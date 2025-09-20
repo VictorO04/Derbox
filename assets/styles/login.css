@@ -104,3 +104,94 @@ input:focus {
 .email {
     margin-bottom:px;
 }
+
+/* Responsividade para celulares */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-right: 0;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 0;
+    padding: 10px 15px;
+  }
+
+  .recuperacao {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .entrar {
+    width: 100%;
+    font-size: 30px;
+    margin-right: 0;
+    padding: 10px 15px;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+  }
+
+  #senha {
+    margin-bottom: 30px;
+  }
+
+  .senha {
+    margin-bottom: 5px;
+  }
+
+  .email {
+    margin-bottom: 10px;
+  }
+}
+
+/* Para telas muito pequenas, tipo 320px */
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 45px;
+  }
+
+  input {
+    font-size: 20px;
+    height: 45px;
+    padding: 8px 12px;
+  }
+
+  .entrar {
+    font-size: 25px;
+    padding: 8px 12px;
+  }
+
+  .recuperacao {
+    font-size: 14px;
+  }
+}
