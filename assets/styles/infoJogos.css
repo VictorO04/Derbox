@@ -218,93 +218,92 @@
         }
 
         /* Responsividade para tablets e celulares */
-@media screen and (max-width: 768px) {
-    .cabecalho {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        padding: 15px 20px;
+        @media screen and (max-width: 768px) {
+        .cabecalho {
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .search {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .banner {
+            height: 300px;
+            padding: 20px;
+        }
+
+        .info_jogo {
+            align-items: center;
+            text-align: center;
+        }
+
+        .titulo_jogo {
+            height: 200px;
+        }
+
+        .detalhes_jogo {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nota, .ano {
+            font-size: 1rem;
+        }
+
+        .conteudo {
+            padding: 20px;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .caixa {
+            min-width: 90%;
+            padding: 20px;
+        }
+
+        .titulo_caixa {
+            font-size: 1.5rem;
+        }
+
+        .texto_caixa {
+            font-size: 0.9rem;
+        }
     }
 
-    .search {
-        width: 100%;
-        margin-left: 0;
-    }
+    /* Para telas muito pequenas, tipo 320px */
+    @media screen and (max-width: 400px) {
+        .banner {
+            height: 220px;
+            padding: 10px;
+        }
 
-    .banner {
-        height: 300px;
-        padding: 20px;
-    }
+        .titulo_jogo {
+            height: 100px;
+        }
 
-    .info_jogo {
-        align-items: center;
-        text-align: center;
-    }
+        .detalhes_jogo {
+            gap: 5px;
+        }
 
-    .titulo_jogo {
-        height: auto;
-        font-size: 2rem;
-    }
+        .nota, .ano {
+            font-size: 0.9rem;
+        }
 
-    .detalhes_jogo {
-        flex-direction: column;
-        gap: 10px;
-    }
+        .caixa {
+            min-width: 95%;
+            padding: 15px;
+        }
 
-    .nota, .ano {
-        font-size: 1rem;
-    }
+        .titulo_caixa {
+            font-size: 1.2rem;
+        }
 
-    .conteudo {
-        padding: 20px;
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
+        .texto_caixa {
+            font-size: 0.8rem;
+        }
     }
-
-    .caixa {
-        min-width: 90%;
-        padding: 20px;
-    }
-
-    .titulo_caixa {
-        font-size: 1.5rem;
-    }
-
-    .texto_caixa {
-        font-size: 0.9rem;
-    }
-}
-
-/* Para telas muito pequenas, tipo 320px */
-@media screen and (max-width: 400px) {
-    .banner {
-        height: 220px;
-        padding: 10px;
-    }
-
-    .titulo_jogo {
-        font-size: 1.5rem;
-    }
-
-    .detalhes_jogo {
-        gap: 5px;
-    }
-
-    .nota, .ano {
-        font-size: 0.9rem;
-    }
-
-    .caixa {
-        min-width: 95%;
-        padding: 15px;
-    }
-
-    .titulo_caixa {
-        font-size: 1.2rem;
-    }
-
-    .texto_caixa {
-        font-size: 0.8rem;
-    }
-}
