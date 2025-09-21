@@ -292,3 +292,24 @@ footer {
         gap: 10px;
     }
 }
+
+/* Texto da logo */
+.logo-text {
+    display: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, cyan, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Remover a logo pra cel */
+@media screen and (max-width: 768px) {
+    .logo-img {
+        display: none;
+    }
+
+    .logo-text {
+        display: block;
+    }
+}
