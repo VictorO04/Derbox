@@ -242,7 +242,7 @@
         }
 
         .titulo_jogo {
-            height: 200px;
+            opacity: 0;
         }
 
         .detalhes_jogo {
@@ -283,7 +283,7 @@
         }
 
         .titulo_jogo {
-            height: 100px;
+            opacity: 0;
         }
 
         .detalhes_jogo {
