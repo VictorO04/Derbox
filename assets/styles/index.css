@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
 /* Reset simples */
 * {
     margin: 0;
@@ -112,8 +114,9 @@ header {
 }
 
 .banner-text h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #fff;
+    font-family: 'Jersey 10', sans-serif;
 }
 
 .banner-text p {
@@ -222,7 +225,8 @@ footer {
     }
 
     .banner-text h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        font-family: 'Jersey 10', sans-serif;
     }
 
     .banner-text p {
@@ -271,7 +275,7 @@ footer {
     }
 
     .banner-text h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .banner-text p {
@@ -296,6 +300,7 @@ footer {
 /* Texto da logo */
 .logo-text {
     display: none;
+    font-family: 'Jersey 10', sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
     background: linear-gradient(90deg, cyan, purple);
