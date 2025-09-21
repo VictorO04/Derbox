@@ -1,0 +1,21 @@
+/* Texto da logo */
+.logo-text {
+    display: none;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, cyan, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Remover a logo pra cel */
+@media screen and (max-width: 768px) {
+    .logo-img {
+        display: none;
+    }
+
+    .logo-text {
+        display: block;
+    }
+}

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliações de Jogos - Derbox</title>
     <link rel="stylesheet" href="../assets/styles/jogos.css">
+    <link rel="stylesheet" href="./../assets/styles/logo.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="../index.html">
-                <img src="./../assets/img/Derbox.png" alt="Derbox Logo">
-            </a>
+            <img src="./../assets/img/Derbox.png" alt="Derbox Logo" class="logo-img">
+            <span class="logo-text">DerBox</span>
         </div>
 
         <div class="search-container">
@@ -22,8 +22,9 @@
         </div>
 
         <div class="menu">
+            <a id="create" href="./../index.html">Voltar</a>
             <a id="signin" href="./login.html">Entrar</a>
-            <a id="create" href="./criarConta.html">Create account</a>
+            <a id="create" href="./criarConta.html">Criar conta</a>
         </div>
     </header>
 
@@ -32,9 +33,9 @@
     <a href="#" class="banner-container">
         <picture>
         <!-- Imagem para celular -->
-        <source media="(max-width: 768px)" src="./../assets/img/games_jogos.png">
+        <source media="(max-width: 768px)" srcset="./../assets/img/games_jogos.png">
         <!-- Imagem para PC -->
-        <img src="./../assets/img/games_jogos.png" alt="Banner Minecraft">
+        <img src="./../assets/img/games_pc.png" alt="Banner consoles" class="banner-img">
         </picture>
     </a>
     </section>
