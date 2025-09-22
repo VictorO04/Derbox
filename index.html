@@ -80,5 +80,28 @@
     <footer>
         <p>© 2025 Derbox - Todos os direitos reservados</p>
     </footer>
+
+    <!-- POPUP, não mexa aqui grupo! -->
+    <div id="popup-overlay"></div>
+    <div id="popup">
+        <button id="popup-close">&times;</button>
+        <img src="./assets/img/popup_pc.png" alt="Teste PC" class="popup-img pc">
+        <img src="./assets/img/popup_mobile.png" alt="Teste Mobile" class="popup-img mobile">
+        <a href="./pages/criarConta.html" class="popup-btn">Ir para outra página</a>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        document.getElementById("popup").style.display = "flex";
+        document.getElementById("popup-overlay").style.display = "block";
+        document.body.classList.add("blurred");
+      });
+
+      document.getElementById("popup-close").addEventListener("click", () => {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popup-overlay").style.display = "none";
+        document.body.classList.remove("blurred");
+      });
+    </script>
 </body>
 </html>
