@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="./assets/styles/logo.css">
+    <script src="./assets/script/index.js" defer></script>
     <title>Derbox</title>
 </head>
 <body>
@@ -89,19 +90,5 @@
         <img src="./assets/img/participacao.png" alt="Teste Mobile" class="popup-img mobile">
         <a href="./pages/criarConta.html" class="popup-btn">Inscrição</a>
     </div>
-
-    <script>
-      window.addEventListener("load", () => {
-        document.getElementById("popup").style.display = "flex";
-        document.getElementById("popup-overlay").style.display = "block";
-        document.body.classList.add("blurred");
-      });
-
-      document.getElementById("popup-close").addEventListener("click", () => {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("popup-overlay").style.display = "none";
-        document.body.classList.remove("blurred");
-      });
-    </script>
 </body>
 </html>
