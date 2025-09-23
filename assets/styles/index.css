@@ -100,13 +100,10 @@ header {
 }
 
 .banner img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(70%);
-    border-radius: 30px;
-    margin-top: 20px;
-    margin-left: 60px;
 }
 
 .banner-text {
@@ -136,7 +133,6 @@ header {
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.3s;
-    gap: 30px;
 }
 
 .btn:hover {
@@ -318,7 +314,7 @@ footer {
     }
 }
 
-/* ====== POPUP ====== */
+/* POP-UP Premio */
 
 /* Fundo desfocado */
 body.blurred > *:not(#popup):not(#popup-overlay) {
@@ -397,4 +393,81 @@ body.blurred > *:not(#popup):not(#popup-overlay) {
 @media screen and (max-width: 768px) {
   .popup-img.pc { display: none; }
   .popup-img.mobile { display: block; }
+}
+
+/* ======== SORTEIO ======== */
+.sorteio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sorteio-dica {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #b8aee0;
+}
+
+.sorteio-box {
+  background: #1a0033;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.6);
+}
+
+.sorteio-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: 'Jersey 10', sans-serif;
+  color: #fff;
+}
+
+.sorteio-box p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+#btn-sorteio {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #103ab7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-sorteio:hover {
+  background: #0c257f;
+}
+
+.voltar-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #103ab7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.voltar-btn:hover {
+  background: #0c257f;
+}
+
+#codigo-gerado {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffdd57;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
 }
