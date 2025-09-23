@@ -106,7 +106,7 @@ header {
 
 .lista_jogos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
   gap: 15px;
 }
 
@@ -119,13 +119,13 @@ header {
 .destaque {
   background-color: #aaa;
   border-radius: 8px;
-  height: 180px;
+  height: 280px;
   position: relative;
   transition: all 0.6s ease;
 }
 
 .destaque:hover {
-  transform: scale(1.4) rotate(3deg);
+  transform: translate(-80px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #0680de;
 }
@@ -197,24 +197,32 @@ header {
     padding: 10px;
   }
 
+  .destaque {
+    background-color: #aaa;
+    border-radius: 8px;
+    height: 100px;
+    position: relative;
+    transition: all 0.6s ease;
+  }
+
   .titulo_secao {
     font-size: 16px;
     margin-bottom: 10px;
   }
 
   .lista_jogos {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
   }
 
   .lista_maior_jogos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 15px;
   }
 
   .jogo {
-    height: 140px;
+    height: 100px;
   }
 }
 
