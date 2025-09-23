@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #0f0f0f;
-    color: #fff;
+    color: #fff; 
+    background: linear-gradient(to bottom, #171631, #2c0531);
 }
 
 /* Header */
@@ -100,10 +100,13 @@ header {
 }
 
 .banner img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     filter: brightness(70%);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 
 .banner-text {
@@ -133,6 +136,7 @@ header {
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.3s;
+    gap: 30px;
 }
 
 .btn:hover {
