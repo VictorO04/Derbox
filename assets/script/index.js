@@ -10,20 +10,22 @@ document.getElementById("popup-close").addEventListener("click", () => {
     document.body.classList.remove("blurred");
 });
 
-// Pega o parâmetro "tema" da URL
+// Pega o "tema=xxxx" na URL da barrinha de pesquisa do nav.
 const params = new URLSearchParams(window.location.search);
 const tema = params.get("tema");
+const footer = document.querySelector("footer");
 
 // Troca o fundo de acordo com o tema escolhido
-if (tema === "retro") {
-  document.body.style.background = "linear-gradient(to bottom, #ff00aa, #220055)";
+if (tema === "senai") {
+  document.body.style.background = "linear-gradient(to bottom, #bc1b1bff, #4d1010ff)";
 } else if (tema === "claro") {
-  document.body.style.background = "linear-gradient(to bottom, #f0f0f0, #fff)";
-  document.body.style.color = "#000"; // ajusta contraste do texto
-} else if (tema === "imagem") {
-  document.body.style.background = 'url("../img/consoles_banner.png") no-repeat center center fixed';
-  document.body.style.backgroundSize = "cover";
+  document.body.style.background = "linear-gradient(to bottom, #d9d9d9ff, #a9a9a9ff)";
+  document.body.style.color = "#000";
+  footer.style.color = "#000";
+  footer.style.background = "#fff";
 } else {
-  // Tema padrão (escuro)
   document.body.style.background = "linear-gradient(to bottom, #171631, #2c0531)";
+  document.body.style.color = "#fff";
+  footer.style.color = "#fff";
+  footer.style.background = "#1a1a1a";
 }
