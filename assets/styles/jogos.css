@@ -201,7 +201,7 @@ header {
   .destaque {
     background-color: #aaa;
     border-radius: 8px;
-    height: 140px;
+    height: 150px;
     position: relative;
     transition: all 0.6s ease;
   }
