@@ -113,7 +113,7 @@ header {
 
 .lista_maior_jogos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 15px;
 }
 
@@ -134,7 +134,7 @@ header {
 .jogo {
   background-color: #aaa;
   border-radius: 8px;
-  height: 180px;
+  height: 220px;
   position: relative;
   transition: all 0.6s ease;
 }
