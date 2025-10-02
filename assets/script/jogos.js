@@ -1,34 +1,29 @@
-  // Pega todos os destaques
-  const destaques = document.querySelectorAll('.destaque');
-  const bannerImg = document.querySelector('.banner-img');
+const jogos = [
+  "The Legends of Zelda Ocarina of Time",
+  "Red Dead Redemption 2",
+  "The Last Of Us",
+  "GTA V",
+  "Hollow Night",
+  "The Crew 2",
+  "Just Dance Friends",
+  "Mortal Kombat 11",
+  "Just Dance 2017",
+  "FC25",
+  "Roblox",
+  "Halflife",
+  "Zelda Breath Of The Wild",
+  "Sonic",
+  "Uno",
+  "Epic Mickey",
+  "Clue",
+  "FC26",
+  "Super Mario Galaxy"
+];
 
-    // Define as imagens que vão aparecer no banner ao passar o mouse
-    const imagensBanner = {
-    "The Legends of Zelda Ocarina of Time": "./../assets/img/OcarinaofTime_banner.png",
-    "Red Dead Redemption 2": "./../assets/img/RedDeadRedemption2_banner.png",
-    "Last Of Us": "./../assets/img/last_banner.png",
-    "FC25": "./../assets/img/FC25_banner.png",
-    "GTA": "./../assets/img/GTA_banner.png",
-    "Hollow": "./../assets/img/Hollow_capa.png"
-    };
+const btn = document.getElementById("btn-sorteio");
+const resultado = document.getElementById("codigo-gerado");
 
-  destaques.forEach(d => {
-    d.addEventListener('mouseenter', () => {
-      //Animaçãozinha (não sei escrever isso kkkkkk)
-      d.style.transform = "translate(-80px)";
-      d.style.transition = "all 0.6s ease";
-      
-      // Muda banner
-      const key = d.alt.split(' ')[0]; // pega primeira palavra do alt
-      if(imagensBanner[key]){
-        bannerImg.src = imagensBanner[key];
-      }
-    });
-
-    d.addEventListener('mouseleave', () => {
-      // Volta ao normal
-      d.style.transform = "translate(0, 0)";
-      // Restaura banner original
-      bannerImg.src = "./../assets/img/games_pc.png";
-    });
-  });
+btn.addEventListener("click", () => {
+  const sorteado = Math.floor(Math.random() * jogos.length);
+  resultado.textContent = jogos[sorteado];
+});
