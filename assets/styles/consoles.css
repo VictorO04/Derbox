@@ -128,6 +128,12 @@ header {
   transform: scale(1.2) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: 0;
+  filter: 2s blur(20px);
+  position: relative; /* Necessário para posicionar o reflexo */
+  overflow: hidden; /* Opcional: para controlar o tamanho do reflexo */
+  display: inline-block; /* Para que o container se ajuste ao tamanho da imagem */
+  display: block; /* Remove espaço extra embaixo da imagem */
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 100%);
 }
 
 .consoles {
