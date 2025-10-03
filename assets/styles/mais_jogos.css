@@ -127,7 +127,7 @@ header {
 }
 
 .destaque:hover {
-  transform: translate(-80px);
+  transform: scale(1.08);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #3588c7;
 }
@@ -181,7 +181,7 @@ footer {
 }
 
 .recomendacao:hover {
-    transform: translate(-20px);
+  transition: all;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #3e21a75b;
   color: #0680dec7;
