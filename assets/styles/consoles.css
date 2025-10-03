@@ -112,12 +112,12 @@ header {
 
 .lista_maior_consoles {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
 }
 
 .destaque {
-  background-color: #aaa;
+  background-color: 0;
   border-radius: 8px;
   height: 280px;
   position: relative;
@@ -125,13 +125,13 @@ header {
 }
 
 .destaque:hover {
-  transform: scale(1.4) rotate(3deg);
+  transform: scale(1.2) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: #0680de;
+  background-color: 0;
 }
 
 .consoles {
-  background-color: #aaa;
+  background-color: 0;
   border-radius: 8px;
   height: 280px;
   position: relative;
@@ -139,9 +139,9 @@ header {
 }
 
 .consoles:hover {
-  transform: scale(1.08) rotate(2deg);
+  transform: scale(1.2) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: #0680de;
+  background-color: 0;
 }
 
 /* Responsividade para celulares */
