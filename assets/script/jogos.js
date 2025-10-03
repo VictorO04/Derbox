@@ -10,14 +10,7 @@ const jogos = [
   "Just Dance 2017",
   "FC 25",
   "Roblox",
-  "Half-Life",
-  "The Legend of Zelda: Breath of the Wild",
-  "Sonic",
-  "Uno",
-  "Epic Mickey",
-  "Clue",
-  "FC 26",
-  "Super Mario Galaxy"
+  "Half-Life"
 ];
 
 const btn = document.getElementById("btn-sorteio");
