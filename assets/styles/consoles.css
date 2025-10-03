@@ -146,27 +146,23 @@ header {
 
 /* Responsividade para celulares */
 @media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 15px 20px;
-    align-items: flex-start;
+
+    header {
+    flex-direction:row;
+  }
+
+  .search-container {
+    margin-left: 20px;
+
+  }
+
+  .menu {
+    display: none;
   }
 
   .logo img {
     height: 70px;
     margin-bottom: 10px;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .menu a {
-    font-size: 14px;
-    padding: 4px 10px;
   }
 
   .search {

@@ -219,12 +219,16 @@
 
         /* Responsividade para tablets e celulares */
 @media screen and (max-width: 768px) {
-    /* Header */
-    .cabecalho {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        padding: 15px 20px;
+    header {
+        flex-direction:row;
+    }
+
+    .search-container {
+        margin-left: 20px;
+    }
+
+    .menu {
+        display: none;
     }
 
     .search {
