@@ -1,0 +1,333 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1b0036;
+  color: white;
+}
+
+header {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0020;
+}
+
+.logo img {
+  height: 95px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 5px 12px;
+}
+
+#signin {
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+#signin:hover {
+  color: #9583b8;
+  border-color: #9583b8;
+}
+
+#create:hover {
+  color: #9583b8;
+}
+
+/* Pesquisa */
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  width: 320px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-left: 110px;
+}
+
+#searchInput {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  color: white;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Banner */
+.banner {
+    max-width: 1000px;
+    max-height: 300px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    align-items: center;
+}
+
+/* Imagem do banner */
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 5s ease;
+}
+
+.secao {
+  margin: 25px;
+  background-color: #26004d;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.titulo_secao {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #103ab7, #9583b8) 1;
+}
+
+.lista_jogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 15px;
+}
+
+.lista_maior_jogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.destaque {
+  background-color: #aaa;
+  border-radius: 8px;
+  height: 280px;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.destaque:hover {
+  transform: translate(-80px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #3588c7;
+}
+
+.mais_jogos {
+  display: flex;
+  height: 280px;
+  width: 280px;
+  transform: translate(-80px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #8a949cb2;
+  border-radius: 10px;
+}
+
+.mais_jogos:hover {
+  transform: translate(-80px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #71818d65;
+}
+
+.jogo {
+  background-color: #aaa;
+  border-radius: 8px;
+  height: 220px;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.jogo:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #0680de;
+}
+
+footer {
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.recomendacao {
+    width: 250px;
+    height: 50px;
+    background-color: #5a079e;
+    border-radius: 10px;
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.recomendacao:hover {
+    transform: translate(-20px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #3e21a75b;
+  color: #0680dec7;
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction:row;
+  }
+
+  .search-container {
+    margin-left: 20px;
+
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .search {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Banner */
+  .banner {
+      max-width: 1110px;
+      margin: 20px 20px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+
+  /* Imagem do banner */
+  .banner-img {
+      margin-bottom: 40px;
+      width: 400px;
+      height: auto;
+      display: flex;
+  }
+
+  .secao {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .destaque {
+    background-color: #aaa;
+    border-radius: 8px;
+    height: 150px;
+    position: relative;
+    transition: all 0.6s ease;
+  }
+
+  .titulo_secao {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .lista_jogos {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .lista_maior_jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+
+  .jogo {
+    height: 100px;
+  }
+}
+
+/* Para telas muito pequenas, tipo 320px */
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 180px;
+  }
+
+  .lista_jogos {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+  }
+
+  .jogo {
+    height: 120px;
+  }
+}
+
+/* ======== SORTEIO ======== */
+.roleta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.imagem_roleta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.texto {
+  margin-top: 2px;
+}
+
+#btn-sorteio {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #103ab7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-sorteio:hover {
+  background: #0c257f;
+}
+
+#codigo-gerado {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffdd57;
+  letter-spacing: 2px;
+}
+
