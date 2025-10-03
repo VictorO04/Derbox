@@ -119,31 +119,14 @@ header {
 }
 
 .destaque {
-  background-color: #aaa;
-  border-radius: 8px;
+  background-color: #b9c3ca91;
+  border-radius: 10px;
   height: 280px;
   position: relative;
   transition: all 0.6s ease;
 }
 
 .destaque:hover {
-  transform: translate(-80px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: #0680de;
-}
-
-.mais_jogos {
-  display: flex;
-  margin-left: 250px;
-  height: 280px;
-  width: 280px;
-  transform: translate(-80px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: #b9c3ca91;
-  border-radius: 10px;
-}
-
-.mais_jogos:hover {
   transform: translate(-80px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background-color: #a3a7aa5b;
