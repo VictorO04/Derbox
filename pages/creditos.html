@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extras - Derbox</title>
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <style>
+    main {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .extras-section {
+      background: rgba(0,0,0,0.5);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+    }
+
+    .extras-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      border-left: 5px solid #2200ff;
+      padding-left: 10px;
+    }
+
+    .links-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.links-info a {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  transition: color 0.3s;
+}
+
+.links-info a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #2200ff;
+  transition: width 0.3s ease;
+}
+
+.links-info a:hover {
+  color: #2200ff;
+}
+
+.links-info a:hover::after {
+  width: 100%;
+}
+
+
+    .extras-section p {
+      margin-bottom: 10px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .theme-options {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .theme-options a {
+      padding: 10px 20px;
+      background: #103ab7;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .theme-options a:hover {
+      background: #0c257f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../assets/img/Derbox.png" alt="Derbox Logo" class="logo-img">
+      <span class="logo-text">DerBox</span>
+    </div>
+
+    <div class="menu">
+      <a href="../index.html">Voltar para o inicio</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="extras-section">
+    <div class="links-info">
+        <a href="extras.html" class="info">◀️ Extras</a>
+    </div>
+
+    <h1>Créditos – Derbox</h1>
+    <p>O aplicativo Derbox foi idealizado e desenvolvido por um grupo dedicado de criadores: Danilo, Rebeca, Yasmin, Victor, Pedro e Emilio.</p>
+    <h1>Sobre o projeto</h1>
+    <p>O Derbox foi criado com o intuito de reunir as críticas e resenhas de usuários, principalmente para ajudar aqueles que estão com dificuldade para saber se irão consumir ou não aquele conteúdo de entretenimento.</p>
+    <p>Mais do que um app de avaliações, o Derbox é uma comunidade onde cada usuário pode contribuir com recomendações sinceras, ajudando outros a explorarem novas experiências de forma autêntica e confiável.</p>
+    <p></p>
+    <p>© 2025 Derbox - Todos os direitos reservados</p>
+    </section>
+  </main>
+
+</body>
+</html>
