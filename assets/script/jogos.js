@@ -1,23 +1,16 @@
 const jogos = [
-  "The Legends of Zelda Ocarina of Time",
+  "The Legend of Zelda: Ocarina of Time",
   "Red Dead Redemption 2",
-  "The Last Of Us",
+  "The Last of Us",
   "GTA V",
-  "Hollow Night",
+  "Hollow Knight",
   "The Crew 2",
   "Just Dance Friends",
   "Mortal Kombat 11",
   "Just Dance 2017",
-  "FC25",
+  "FC 25",
   "Roblox",
-  "Halflife",
-  "Zelda Breath Of The Wild",
-  "Sonic",
-  "Uno",
-  "Epic Mickey",
-  "Clue",
-  "FC26",
-  "Super Mario Galaxy"
+  "Half-Life"
 ];
 
 const btn = document.getElementById("btn-sorteio");

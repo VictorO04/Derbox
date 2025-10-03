@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extras - Derbox</title>
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <style>
+/* Estilos gerais para o layout principal */
+main {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif; /* Font family mais moderna */
+  color: #eee;
+  background: #1e1e1e; /* Fundo mais suave para não competir com o conteúdo */
+}
+
+/* Estilos para a seção de extras */
+.extras-section {
+  background: rgba(0, 0, 0, 0.6); /* Fundo com mais transparência */
+  padding: 30px;
+  border-radius: 20px; /* Bordas mais arredondadas */
+  margin-bottom: 40px; /* Mais espaço entre seções */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7); /* Sombras mais fortes */
+  backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+}
+
+/* Título das seções extras */
+.extras-section h2 {
+  font-size: 2rem; /* Tamanho maior para melhor destaque */
+  margin-bottom: 20px; /* Mais espaçamento abaixo do título */
+  border-left: 8px solid #2200ff;
+  padding-left: 15px; /* Mais espaçamento para o texto */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff; /* Cor do título em branco */
+}
+
+/* Links dentro da seção extras */
+.links-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Maior espaçamento entre os links */
+  margin-bottom: 30px;
+}
+
+/* Links com interação */
+.links-info a {
+  font-size: 1.5rem; /* Aumentar o tamanho da fonte */
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  transition: color 0.4s ease, transform 0.3s ease; /* Animação mais suave */
+}
+
+.links-info a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #2200ff;
+  transition: width 0.4s ease;
+}
+
+.links-info a:hover {
+  color: #2200ff;
+  transform: translateX(5px); /* Pequeno deslocamento para a direita */
+}
+
+.links-info a:hover::after {
+  width: 100%;
+}
+
+/* Parágrafos dentro da seção extras */
+.extras-section p {
+  margin-bottom: 15px;
+  color: #bbb; /* Cor de texto mais suave */
+  line-height: 1.7;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Opções de temas */
+.theme-options {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Links de opções de temas */
+.theme-options a {
+  padding: 12px 25px;
+  background: #103ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.3s ease;
+}
+
+.theme-options a:hover {
+  background: #0c257f;
+  transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .extras-section {
+    padding: 20px;
+  }
+
+  .links-info a {
+    font-size: 1.2rem;
+  }
+
+  .theme-options {
+    gap: 15px;
+  }
+
+  .theme-options a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../assets/img/Derbox.png" alt="Derbox Logo" class="logo-img">
+      <span class="logo-text">DerBox</span>
+    </div>
+
+    <div class="menu">
+      <a href="../index.html">Voltar para o inicio</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="extras-section">
+    <div class="links-info">
+        <a href="extras.html" class="info">◀️ Extras</a>
+    </div>
+
+    <h1>Créditos – Derbox</h1>
+    <p>O aplicativo Derbox é o resultado do trabalho árduo e da dedicação de um time incrível de criadores e desenvolvedores que compartilharam sua visão e paixão por transformar a maneira como as pessoas interagem com o conteúdo de entretenimento. O projeto foi idealizado, desenvolvido e aperfeiçoado por: Danilo, Rebeca, Yasmin, Victor, Pedro e Emilio, cada um trazendo sua expertise única para construir uma plataforma intuitiva, eficiente e acolhedora.</p>
+    <p>Graças à colaboração e ao esforço conjunto desses profissionais talentosos, o Derbox evolui constantemente para oferecer aos usuários uma experiência de navegação mais rica e uma maneira eficaz de compartilhar e descobrir novas opiniões sobre filmes, séries, livros, jogos e muito mais.</p>
+    
+    <h1>Sobre o Projeto</h1>
+    <p>O Derbox foi desenvolvido com um objetivo claro: criar uma plataforma onde as críticas e resenhas de usuários se tornem uma ferramenta poderosa para quem busca tomar decisões mais informadas ao consumir conteúdo de entretenimento. O aplicativo nasceu da ideia de ajudar as pessoas a se orientarem melhor em um mundo saturado de opções, onde a escolha certa pode ser desafiadora.</p>
+    <p>Mais do que um simples agregador de avaliações, o Derbox é uma verdadeira comunidade de pessoas que buscam compartilhar suas experiências de maneira autêntica e confiável. Cada usuário tem o poder de contribuir com suas próprias opiniões, ajudando outros a explorar novas opções e a se envolver com conteúdo de qualidade. Nossa missão é criar um ambiente onde a sinceridade e a troca de ideias sejam sempre valorizadas.</p>
+    <p>Acreditamos que cada opinião conta e que a diversidade de experiências é o que torna o Derbox um espaço único, onde as pessoas podem se sentir seguras ao tomar suas decisões de entretenimento com base no que realmente importa: as experiências reais de outros usuários como elas.</p>
+    <p>Com essa proposta em mente, buscamos constantemente aprimorar a plataforma e fornecer ferramentas que facilitem a troca de opiniões e a descoberta de conteúdos relevantes e de qualidade.</p>
+    
+    <p>© 2025 Derbox - Todos os direitos reservados. Agradecemos a todos que fazem parte dessa jornada, seja como usuário, desenvolvedor ou colaborador. Juntos, tornamos o Derbox um espaço mais dinâmico e útil para todos os apaixonados por entretenimento!</p>
+    
+    </section>
+  </main>
+
+</body>
+</html>

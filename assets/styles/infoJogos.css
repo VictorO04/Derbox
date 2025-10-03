@@ -357,3 +357,32 @@
         display: none;
        } 
       }
+
+      .analises {
+        flex: 1;
+        min-width: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(106, 0, 255, 0.3);
+        border: 1px solid #6a00ff;
+        opacity: 0;
+        animation: fade_in 1s ease 0.9s forwards;
+        transition: transform 0.3s ease;
+      }
+
+      .analises:hover {
+        transform: translateY(-5px);
+    }
+
+    .titulo_analise {
+        font-family: "Jersey 10", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #6a00ff;
+    }
+
+    .texto_analise {
+        line-height: 1.6;
+        color: #dddddd;
+    }

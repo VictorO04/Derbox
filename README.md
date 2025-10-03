@@ -1,6 +1,6 @@
 # Derbox
 
-Um site com o foco em análises de obras da cultura pop (filmes, séries, jogos).
+Um site com o foco em análises de obras da cultura pop (livros, séries, jogos).
 
 ## Sobre o projeto
 
