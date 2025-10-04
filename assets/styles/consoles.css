@@ -116,7 +116,7 @@ header {
   gap: 15px;
 }
 
-.destaque {
+.destaque-ps5 {
   background-color: 0;
   border-radius: 8px;
   height: 280px;
@@ -124,16 +124,41 @@ header {
   transition: all 0.6s ease;
 }
 
-.destaque:hover {
+.destaque-one {
+  background-color: 0;
+  border-radius: 8px;
+  height: 280px;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.destaque-sw2 {
+  background-color: 0;
+  border-radius: 8px;
+  height: 280px;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.destaque-ps5:hover {
   transform: scale(1.2) rotate(2deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: 0;
-  filter: 2s blur(20px);
-  position: relative; /* Necessário para posicionar o reflexo */
-  overflow: hidden; /* Opcional: para controlar o tamanho do reflexo */
-  display: inline-block; /* Para que o container se ajuste ao tamanho da imagem */
-  display: block; /* Remove espaço extra embaixo da imagem */
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 100%);
+  transition: 0.5s;
+  background-image: url("./../img/PS5_banner.png");
+}
+
+.destaque-sw2:hover {
+  transform: scale(1.2) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: 0.5s;
+  background-image: url("./../img/PS5_banner.png");
+}
+
+.destaque-one:hover {
+  transform: scale(1.2) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: 0.5s;
+  background-image: url("./../img/PS5_banner.png");
 }
 
 .consoles {
@@ -219,7 +244,7 @@ header {
   }
 }
 
-/* Para telas muito pequenas, tipo 320px */
+/* Para telas muito pequenas, tipo 400px */
 @media screen and (max-width: 400px) {
   .banner {
     height: 180px;
