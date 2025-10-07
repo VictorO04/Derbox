@@ -11,6 +11,7 @@
 body {
     color: #fff; 
     background: linear-gradient(to bottom, #171631, #2c0531);
+    align-items: center;
 }
 
 /* Header */
@@ -137,6 +138,26 @@ header {
 
 .btn:hover {
     background: #0c257f;
+}
+
+/* Banner menor */
+.banner_menor {
+    position: relative;
+    width: 1100px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_menor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
 }
 
 /* Categorias */
