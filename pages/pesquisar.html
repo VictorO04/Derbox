@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extras - Derbox</title>
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <script src="../assets/script/pesquisar.js" defer></script>
+  <style>
+        .sem_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .search-box {
+            display: flex;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 40px;
+        }
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ccc;
+        }
+        .beta{
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background-color: #ff3f3f;
+            color: white;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: #1f0874;
+            color: white;
+        }
+        .nao_encontrado {
+            margin-top: 30px;
+            color: #fff;
+            font-size: 18px;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../assets/img/Derbox.png" alt="Derbox Logo" class="logo-img">
+      <span class="logo-text">DerBox</span>
+    </div>
+
+    <div class="menu">
+      <a href="../index.html">Voltar para o inicio</a>
+    </div>
+  </header>
+
+  <div class="sem_header">
+        <h1>Pesquisar <strong class="beta">BETA</strong></h1>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Digite o nome do que você procura...">
+        <button onclick="pesquisar()">🔍</button>
+    </div>
+    <p class="nao_encontrado" id="naoEncontrado" style="display:none;">Nenhum jogo encontrado! Verifique se você escreveu corretamente...</p>
+  </div>
+</body>
+</html>
