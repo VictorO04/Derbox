@@ -7,16 +7,19 @@ body {
   color: white;
 }
 
+/* ---------- HEADER ---------- */
 header {
   display: flex;
-  padding: 20px 50px;
+  flex-wrap: wrap;
+  padding: 15px 20px;
   justify-content: space-between;
   align-items: center;
   background-color: #0f0020;
 }
 
 .logo img {
-  height: 95px;
+  height: 85px;
+  max-width: 100%;
 }
 
 .menu {
@@ -46,15 +49,22 @@ header {
   color: #9583b8;
 }
 
-/* Pesquisa */
+/* ---------- PESQUISA ---------- */
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .search {
   display: flex;
   align-items: center;
   border: 1px solid white;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   border-radius: 8px;
   padding: 5px 10px;
-  margin-left: 110px;
+  margin-left: 40px;
 }
 
 #searchInput {
@@ -65,29 +75,23 @@ header {
   color: white;
 }
 
-.search-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-/* Banner */
+/* ---------- BANNER ---------- */
 .banner {
-    max-width: 1000px;
-    max-height: 300px;
-    margin: 20px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* Imagem do banner */
 .banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+/* ---------- SEÇÕES ---------- */
 .secao {
   margin: 25px;
   background-color: #26004d;
@@ -96,12 +100,12 @@ header {
 }
 
 .titulo_secao {
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    display: inline-block;
-    border-bottom: 3px solid;
-    border-image: linear-gradient(to right, #103ab7, #9583b8) 1;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #103ab7, #9583b8) 1;
 }
 
 .lista_consoles {
@@ -116,13 +120,15 @@ header {
   gap: 15px;
 }
 
+/* ---------- BOTÕES DE DESTAQUE ---------- */
 .destaque-botao {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   height: 90px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 700;
@@ -131,10 +137,8 @@ header {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s ease;
-  ;
 }
 
-/* Brilho tipo vidro */
 .destaque-botao::after {
   content: "";
   position: absolute;
@@ -153,32 +157,25 @@ header {
   left: 120%;
 }
 
-.destaque-ps5:hover {
-  transform: scale(1.2);
-}
-
-.destaque-one:hover {
-  transform: scale(1.2);
-}
-
+.destaque-ps5:hover,
+.destaque-one:hover,
 .destaque-sw2:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
-.destaque-sw2 {
-  margin-left: 190px
-}
-
+/* Centraliza os botões e remove margens fixas */
+.destaque-sw2,
 .destaque-one {
-  margin-left: 50px
+  margin: 15px auto;
+  display: block;
 }
 
 .destaque-botao span {
   z-index: 2;
 }
 
+/* ---------- CONSOLES ---------- */
 .consoles {
-  background-color: 0;
   border-radius: 8px;
   height: 280px;
   position: relative;
@@ -186,25 +183,23 @@ header {
 }
 
 .consoles:hover {
-  transform: scale(1.2) rotate(2deg);
+  transform: scale(1.1) rotate(1deg);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: 0;
 }
 
-/* Responsividade para celulares */
+/* ---------- RESPONSIVIDADE ---------- */
+@media screen and (max-width: 1024px) {
+  .search {
+    margin-left: 0;
+    max-width: 250px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-
-    header {
-    flex-direction:row;
-  }
-
-  .search-container {
-    margin-left: 20px;
-
-  }
-
-  .menu {
-    display: none;
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
   }
 
   .logo img {
@@ -212,26 +207,19 @@ header {
     margin-bottom: 10px;
   }
 
+  .menu {
+    display: none;
+  }
+
   .search {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 10px;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 0;
   }
 
-  /* Banner */
   .banner {
-      max-width: 1100px;
-      margin: 20px 20px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  }
-
-  /* Imagem do banner */
-  .banner-img {
-      width: 100%;
-      height: auto;
-      display: block;
+    width: 90%;
+    margin: 15px auto;
   }
 
   .secao {
@@ -245,33 +233,62 @@ header {
   }
 
   .lista_consoles {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
   }
 
   .lista_maior_consoles {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+  }
+
+  .destaque-botao {
+    font-size: 1.4rem;
+    height: 70px;
+    margin: 10px auto;
   }
 
   .consoles {
-    height: 140px;
+    height: 160px;
   }
 }
 
-/* Para telas muito pequenas, tipo 400px */
-@media screen and (max-width: 400px) {
+/* Telas menores que 450px */
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
   .banner {
-    height: 180px;
+    height: auto;
+    width: 95%;
   }
 
   .lista_consoles {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
   .consoles {
-    height: 120px;
+    height: 130px;
+  }
+
+  .destaque-botao {
+    font-size: 1.2rem;
+    height: 60px;
+    margin: 10px auto;
+  }
+
+  .search {
+    width: 95%;
+    margin-left: 0;
+  }
+
+  .secao {
+    margin: 10px;
+    padding: 8px;
   }
 }
