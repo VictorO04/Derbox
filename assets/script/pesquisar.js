@@ -53,7 +53,8 @@ const pesquisado = [
     { termos: ["the game of thrones", "game of thrones", "got"], pagina: "../pages/series/game_of_thrones.html" },
     { termos: ["la casa de papel", "lacasa"], pagina: "../pages/series/lacasa.html" },
     { termos: ["rock"], pagina: "../pages/series/rock.html" },
-    { termos: ["sherlock", "sherlock homes"], pagina: "../pages/series/sherlock.html" }
+    { termos: ["sherlock", "sherlock homes"], pagina: "../pages/series/sherlock.html" },
+    { termos: ["rebeca", "beca"], pagina: "../assets/img/rebeca.png" }
 ];
 
 
