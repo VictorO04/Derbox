@@ -256,7 +256,7 @@ footer {
         gap: 10px;
     }
 
-    .banner {
+    .banner{
         height: 250px;
         padding: 15px;
     }
@@ -279,6 +279,12 @@ footer {
     .btn {
         padding: 8px 15px;
         font-size: 0.6rem;
+    }
+
+   .banner_menor{
+        height: 250px;
+        padding: 15px;
+        border-radius: 10px;
     }
 
     .categoria {
