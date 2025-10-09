@@ -22,96 +22,159 @@
 }
 
 .banner {
-    position: relative;
-    width: 1100px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 20px;
+  position: relative;
+  width: 1100px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .banner_imagem_principal {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
 }
 
 .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
 }
 
 .banner-text h1 {
-    font-size: 3rem;
-    color: #fff;
-    font-family: 'Jersey 10', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Jersey 10', sans-serif;
 }
 
 .banner-text p {
-    margin: 15px 0;
-    font-size: 1.2rem;
-    color: #ddd;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #ddd;
 }
 
 .btn {
-    padding: 10px 20px;
-    background: #103ab7;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.3s;
+  padding: 10px 20px;
+  background: #103ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-    background: #0c257f;
+  background: #0c257f;
 }
 
-/* Responsividade para celulares */
+/* ======================== */
+/* 📱 RESPONSIVIDADE GERAL */
+/* ======================== */
+
 @media screen and (max-width: 768px) {
-  header {
-    flex-direction:row;
-  }
+.banner_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  padding: 20px;
+  gap: 40px;
+  margin-top: -270px;
+}
 
-  .search-container {
-    margin-left: 20px;
+.lista {
+  height: 560px;
+  width: 200px;
+}
 
-  }
-
-  .menu {
+.descricao {
     display: none;
-  }
+}
 
-  .search {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 10px;
-  }
+.banner {
+  position: relative;
+  width: 1100px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
 
-  /* Banner */
+.banner_imagem_principal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Jersey 10', sans-serif;
+}
+
+.banner-text p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #103ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+@media screen and (max-width: 480px) {
   .banner {
-      max-width: 1110px;
-      margin: 20px 20px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    width: 95%;
+    height: auto;
   }
 
-  /* Imagem do banner */
-  .banner-img {
-      margin-bottom: 40px;
-      width: 400px;
-      height: auto;
-      display: flex;
+  .banner-text {
+    left: 6%;
   }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
 }
