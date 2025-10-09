@@ -1,166 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:wght@400;600;700&display=swap');
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #1b0036;
-  color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: #1b0036;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== HEADER ===== */
 header {
-  display: flex;
-  padding: 20px 50px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0f0020;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0020;
 }
 
 .logo img {
-  height: 95px;
+    height: 95px;
 }
 
 .menu {
-  display: flex;
-  gap: 25px;
+    display: flex;
+    gap: 25px;
 }
 
 .menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
-  padding: 5px 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 5px 12px;
 }
 
 #signin {
-  border: 2px solid white;
-  border-radius: 8px;
+    border: 2px solid white;
+    border-radius: 8px;
 }
 
 #signin:hover {
-  color: #9583b8;
-  border-color: #9583b8;
+    color: #9583b8;
+    border-color: #9583b8;
 }
 
 #create:hover {
-  color: #9583b8;
+    color: #9583b8;
 }
 
-/* Pesquisa */
+/* ===== PESQUISA ===== */
 .search {
-  display: flex;
-  align-items: center;
-  border: 1px solid white;
-  width: 320px;
-  border-radius: 8px;
-  padding: 5px 10px;
-  margin-left: 110px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    width: 320px;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
 
 #searchInput {
-  border: none;
-  background: transparent;
-  width: 100%;
-  outline: none;
-  color: white;
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    color: white;
 }
 
 .search-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
+/* ===== SEÇÕES ===== */
 .secao {
-  margin: 25px;
-  background-color: #26004d;
-  border-radius: 10px;
-  padding: 15px;
+    padding: 40px 60px;
 }
 
 .titulo_secao {
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    display: inline-block;
-    border-bottom: 3px solid;
-    border-image: linear-gradient(to right, #103ab7, #9583b8) 1;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #b48aff;
+    text-align: center;
 }
 
-<<<<<<< HEAD
-.lista_filme {
-=======
+.lista_series,
 .lista_filmes {
->>>>>>> 73ae500dc88c0d97a3bdd3a3ff7d6dcd7753f3e2
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-<<<<<<< HEAD
-.filme {
-=======
 .filmes {
->>>>>>> 73ae500dc88c0d97a3bdd3a3ff7d6dcd7753f3e2
-  background-color: #aaa;
-  border-radius: 8px;
-  height: 280px;
-  position: relative;
-  transition: all 0.6s ease;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-<<<<<<< HEAD
-.filme:hover {
-=======
 .filmes:hover {
->>>>>>> 73ae500dc88c0d97a3bdd3a3ff7d6dcd7753f3e2
-  transform: scale(1.08) rotate(5deg) scale(105%);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  background-color: #0680de;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(106, 0, 255, 0.5);
 }
 
-/* Responsividade para celulares */
-@media screen and (max-width: 768px) {
-  .logo img {
-    height: 70px;
-    margin-bottom: 10px;
-  }
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .menu {
-    display: none;
-  }
+    .search {
+        width: 90%;
+    }
 
-  header {
-    flex-direction:row;
-  }
+    .menu {
+        display: none;
+    }
 
-  .search-container {
-    margin-left: 20px;
+    .filmes {
+        width: 150px;
+        height: 220px;
+    }
 
-  }
+    .titulo_secao {
+        font-size: 1.4rem;
+    }
+}
 
-  .search {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 10px;
-  }
+@media (max-width: 400px) {
+    .filmes {
+        width: 120px;
+        height: 180px;
+    }
 
-  .secao {
-    margin: 15px;
-    padding: 10px;
-  }
-
-  .titulo_secao {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .lista_filme {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-  }
-
-  .filme {
-    height: 200px;
-  }
+    .titulo_secao {
+        font-size: 1.2rem;
+    }
 }
