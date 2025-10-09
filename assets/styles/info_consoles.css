@@ -329,22 +329,24 @@
 
       .avaliacao {
         margin: 30px auto;
-        max-width: 600px;
+        max-width: 6000px;
         padding: 20px;
         border-radius: 10px;
-        background: #f4f4f4;
+        background-color: rgba(0, 0, 0, 0.5);
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border: 1px solid #6a00ff;
+        justify-content: flex-start;
       }
       .avaliacao h2 {
         margin-bottom: 15px;
         font-size: 1.4rem;
       }
       .avaliacao textarea {
-        width: 100%;
+        width: 900px;
         min-height: 100px;
         padding: 10px;
         border-radius: 8px;
-        border: 1px solid #ccc;
+        border: 1px solid #000000;
         font-size: 1rem;
         resize: vertical;
       }
