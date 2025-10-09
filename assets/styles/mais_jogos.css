@@ -162,15 +162,9 @@ header {
   background-color: #0680de;
 }
 
-footer {
-    height: 150px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
 
 .recomendacao {
-    width: 250px;
+    width: 300px;
     height: 50px;
     background-color: #5a079e;
     color: white;
@@ -179,6 +173,7 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 .recomendacao:hover {
@@ -275,54 +270,3 @@ footer {
     height: 120px;
   }
 }
-
-/* ======== SORTEIO ======== */
-.roleta {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 20px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.imagem_roleta {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(10px);
-  z-index: -1;
-}
-
-.texto {
-  margin-top: 2px;
-}
-
-#btn-sorteio {
-  padding: 12px 25px;
-  font-size: 1rem;
-  font-weight: bold;
-  background: #103ab7;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#btn-sorteio:hover {
-  background: #0c257f;
-}
-
-#codigo-gerado {
-  margin-top: 25px;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #ffdd57;
-  letter-spacing: 2px;
-}
-
