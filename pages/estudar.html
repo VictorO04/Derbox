@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sites de estudos - Derbox</title>
     <link rel="stylesheet" href="../assets/styles/info_estudar.css">
-    <link rel="stylesheet" href="../assets/styles/filmes.css">
     <link rel="stylesheet" href="./../assets/styles/logo.css">
 </head>
 
@@ -27,8 +26,8 @@
 
         <div class="menu">
             <a id="create" href="./../index.html">Voltar</a>
-            <a id="signin" href="./pages/login.html">Entrar</a>
-            <a id="create" href="./pages/criarConta.html">Criar Conta</a>
+            <a id="signin" href="./login.html">Entrar</a>
+            <a id="create" href="./criarConta.html">Criar conta</a>
         </div>
     </header>
 
@@ -36,8 +35,14 @@
     <section class="banner_principal">
     <a href="#" class="banner-container">
         <picture>
-        <img src="./../assets/img/estudar_banner.png" alt="Banner consoles" class="banner_imagem_principal">
+        <!-- Imagem para celular -->
+        <source media="(max-width: 768px)" srcset="../assets/img/estudar_celular.png">
+        <!-- Imagem para PC -->
+        <div class="teste"><img src="../assets/img/estudar_banner.png" alt="Banner consoles" class="banner_imagem_principal"></div>
         </picture>
+    </a>
+    </section>
+
     </a>
     </section>
     <div class="secao">
@@ -49,6 +54,7 @@
                 <div class="banner-text">
                     <h1>Aprendendo história</h1>
                     <p class="descricao">Veja principais anotações das aulas da Agda realizadas por alunos que amam a matéria!</p>
+                    <p class="desc">Veja principais anotações das aulas</p>
                     <a href="https://danilojorge12.github.io/Aprendendo-Historia/" class="btn">Ver site</a>
                 </div>
             </section>
@@ -58,6 +64,7 @@
                 <div class="banner-text">
                     <h1>Estudando Geografia</h1>
                     <p class="descricao">Sempre que tiver provas do Menna, aqui terá o resumo pra dar aquela decorada.</p>
+                    <p class="desc">Estudos para provas do Menna</p>
                     <a href="https://danilojorge12.github.io/Estudando-Geografia/" class="btn">Ver site</a>
                 </div>
             </section>
@@ -67,6 +74,7 @@
                 <div class="banner-text">
                     <h1>Resumo de Biologia</h1>
                     <p class="descricao">Tamires chamou? Mais resumos sobre suas provas podem ser encontrados aqui.</p>
+                    <p class="desc">Resumos das aulas da Tamires</p>
                     <a href="https://danilojorge12.github.io/Biologia-Resumo/" class="btn">Ver site</a>
                 </div>
 
