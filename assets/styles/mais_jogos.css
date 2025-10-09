@@ -162,12 +162,6 @@ header {
   background-color: #0680de;
 }
 
-footer {
-    height: 150px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
 
 .recomendacao {
     width: 300px;
