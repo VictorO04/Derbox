@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/index.css">
-    <link rel="stylesheet" href="../assets/styles/logo.css">
-    <script src="../assets/script/premio.js" defer></script>
-    <title>Premio - Derbox</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <link rel="stylesheet" href="../assets/styles/logo.css">
+  <script src="../assets/script/premio.js" defer></script>
+  <title>Premio - Derbox</title>
 </head>
+
 <body>
   <header>
     <div class="logo">
@@ -16,10 +18,12 @@
     </div>
 
     <div class="search-container">
-      <div class="search">
-        <label for="searchInput"></label>
-        <input type="text" id="searchInput" placeholder="Pesquisar...">
-      </div>
+      <form action="../pages/pesquisar.html" method="get">
+        <div class="search">
+          <label for="searchInput"></label>
+          <input type="text" id="searchInput" name="q" placeholder="Pesquisar...">
+        </div>
+      </form>
     </div>
   </header>
 
@@ -30,7 +34,7 @@
       <h1>Sorteio Derbox 🎉</h1>
       <p>Pegue seu código para concorrer a um chocolate!</p>
       <button id="btn-sorteio">Gerar Código</button>
-      <div id="codigo-gerado">---</div> 
+      <div id="codigo-gerado">---</div>
       <a href="index_conta.html" class="voltar-btn">Voltar</a>
     </div>
 
@@ -41,4 +45,5 @@
     <p>© 2025 Derbox - Todos os direitos reservados</p>
   </footer>
 </body>
+
 </html>

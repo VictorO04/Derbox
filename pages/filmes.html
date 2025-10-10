@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Séries - DerBox</title>
+    <title>Filmes - Derbox</title>
     <link rel="stylesheet" href="../assets/styles/filmes.css">
-    <link rel="stylesheet" href="../assets/styles/logo.css">
+    <link rel="stylesheet" href="./../assets/styles/logo.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="../assets/img/Derbox.png" alt="Derbox Logo" class="logo-img">
+            <img src="./../assets/img/Derbox.png" alt="Derbox Logo" class="logo-img">
             <span class="logo-text">DerBox</span>
         </div>
 
         <div class="search-container">
-            <form action="pages/pesquisar.html" method="get">
+            <form action="../pages/pesquisar.html" method="get">
                 <div class="search">
                     <label for="searchInput"></label>
                     <input type="text" id="searchInput" name="q" placeholder="Pesquisar...">
@@ -24,52 +25,83 @@
         </div>
 
         <div class="menu">
-            <a id="create" href="../index.html">Voltar</a>
-            <a id="signin" href="./pages/login.html">Entrar</a>
-            <a id="create" href="./pages/criarConta.html">Criar Conta</a>
+            <a id="create" href="./../index.html">Voltar</a>
+            <a id="signin" href="login.html">Entrar</a>
+            <a id="create" href="criarConta.html">Criar Conta</a>
         </div>
     </header>
 
-    <!-- ================= FILMES MAIS RECOMENDADOS ================= -->
     <div class="secao">
-        <div class="titulo_secao">Filmes mais recomendados</div>
-        <div class="lista_series">
-
-            <a href="./filmes/shrek.html">
-                <img src="../assets/img/sherek_capa.jpg" alt="Shrek" class="filmes">
-            </a>
-
-            <a href="./filmes/coraline.html">
-                <img src="../assets/img/coraline_capa.jpg" alt="Coraline" class="filmes">
-            </a>
-
+        <div class="titulo_secao">Filmes mais recomendadas</div>
+        <div class="lista_filmes">
             <a href="./filmes/avangers.html">
-                <img src="../assets/img/avengers_capa.jpg" alt="Avengers" class="filmes">
+                <img src="./../assets/img/avengers_capa.jpg" alt="Avengers" class="filmes">
             </a>
-
-            <a href="./filmes/up.html">
-                <img src="../assets/img/up.jpg" alt="Up nas Alturas" class="filmes">
+            <a href="./filmes/peca.html">
+                <img src="./../assets/img/mae_uma_peca_capa.png" alt="Minha mãe é uma peça" class="filmes">
             </a>
-
             <a href="./filmes/zootopia.html">
-                <img src="../assets/img/zootopia_capa.png" alt="Zootopia" class="filmes">
+                <img src="./../assets/img/zootopia_capa.png" alt="Zootopia" class="filmes">
             </a>
-
-            <a href="./filmes/minions.html">
-                <img src="../assets/img/minions_capa.png" alt="Minions" class="filmes">
+            <a href="./filmes/branquelas.html">
+                <img src="./../assets/img/branquelas_capa.png" alt="As Branquelas" class="filmes">
             </a>
         </div>
     </div>
 
-    <!-- ================= FILMES MAIS ASSISTIDOS ================= -->
     <div class="secao">
-        <div class="titulo_secao">Filmes mais assistidos</div>
+        <div class="titulo_secao">Comédia</div>
         <div class="lista_filmes">
-
-            <a href="./filmes/mae.html">
-                <img src="../assets/img/mãe_capa.jpg" alt="Mãe!" class="filmes">
+            <a href="./filmes/shrek.html">
+                <img src="./../assets/img/sherek_capa.jpg" alt="Sherek" class="filmes">
+            </a>
+            <a href="./filmes/up.html">
+                <img src="./../assets/img/up.jpg" alt="Up nas alturas" class="filmes">
+            </a>
+            <a href="./filmes/peca.html">
+                <img src="./../assets/img/mae_uma_peca_capa.png" alt="Minha mãe é uma peça" class="filmes">
+            </a>
+            <a href="./filmes/minions.html">
+                <img src="./../assets/img/minions_capa.png" alt="Meu Malvado Favorito" class="filmes">
+            </a>
+            <a href="./filmes/branquelas.html">
+                <img src="./../assets/img/branquelas_capa.png" alt="As Branquelas" class="filmes">
+            </a>
+        </div>
+    </div>
+    
+    <div class="secao">
+        <div class="titulo_secao">Todos os filmes avaliados</div>
+        <div class="lista_filmes">
+            <a href="./filmes/shrek.html">
+                <img src="./../assets/img/sherek_capa.jpg" alt="Sherek" class="filmes">
+            </a>
+            <a href="./filmes/coraline.html">
+                <img src="./../assets/img/coraline_capa.jpg" alt="Coraline" class="filmes">
+            </a>
+            <a href="./filmes/avangers.html">
+                <img src="./../assets/img/avengers_capa.jpg" alt="Avengers" class="filmes">
+            </a>
+            <a href="./filmes/up.html">
+                <img src="./../assets/img/up.jpg" alt="Up nas alturas" class="filmes">
+            </a>
+            <a href="./filmes/monstros.html">
+                <img src="./../assets/img/monstro_capa.png" alt="Monstros S.A." class="filmes">
+            </a>
+            <a href="./filmes/peca.html">
+                <img src="./../assets/img/mae_uma_peca_capa.png" alt="Minha mãe é uma peça" class="filmes">
+            </a>
+            <a href="./filmes/zootopia.html">
+                <img src="./../assets/img/zootopia_capa.png" alt="Zootopia" class="filmes">
+            </a>
+            <a href="./filmes/minions.html">
+                <img src="./../assets/img/minions_capa.png" alt="Meu Malvado Favorito" class="filmes">
+            </a>
+            <a href="./filmes/branquelas.html">
+                <img src="./../assets/img/branquelas_capa.png" alt="As Branquelas" class="filmes">
             </a>
         </div>
     </div>
 </body>
+
 </html>
